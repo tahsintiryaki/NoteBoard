@@ -61,7 +61,6 @@
     <Compile Include="Repositories\NoteDAL.cs" />
     <Compile Include="Repositories\PasswordDAL.cs" />
     <Compile Include="Repositories\UserDAL.cs" />
-    <Compile Include="test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
