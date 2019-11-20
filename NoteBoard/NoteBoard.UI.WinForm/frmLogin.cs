@@ -36,8 +36,8 @@ namespace NoteBoard.UI.WinForm
             {
                 if (currentUser.UserRole==UserRole.Standart)
                 {
-                    frmMain frmMain = new frmMain();
-                    //frm main ctorunda user gmndericez.
+                    frmMain frmMain = new frmMain(currentUser);
+                    //frm main ctorunda user göndereceğiz. CurrentUser ile gönderdik.
                     this.Owner = this;
                     frmMain.Show();
                     this.Hide();

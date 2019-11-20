@@ -23,7 +23,7 @@ namespace NoteBoard.UI.WinForm
 
         private void frmAdmin_Load(object sender, EventArgs e)
         {
-
+            FillUser();
         }
         private void FillUser()
         {

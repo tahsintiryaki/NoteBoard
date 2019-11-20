@@ -97,6 +97,7 @@
             this.btnChangePassword.TabIndex = 19;
             this.btnChangePassword.Text = "Şifre Değiştir";
             this.btnChangePassword.UseVisualStyleBackColor = true;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // frmChangePassword
             // 
@@ -112,6 +113,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmChangePassword";
             this.Text = "frmChangePassword";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmChangePassword_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

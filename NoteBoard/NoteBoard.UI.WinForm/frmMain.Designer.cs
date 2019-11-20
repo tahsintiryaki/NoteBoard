@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lstNotes = new System.Windows.Forms.ListBox();
             this.lblChangePassword = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTitle = new System.Windows.Forms.TextBox();
@@ -38,13 +38,13 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lstNotes
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(15, 15);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(158, 355);
-            this.listBox1.TabIndex = 0;
+            this.lstNotes.FormattingEnabled = true;
+            this.lstNotes.Location = new System.Drawing.Point(15, 15);
+            this.lstNotes.Name = "lstNotes";
+            this.lstNotes.Size = new System.Drawing.Size(158, 355);
+            this.lstNotes.TabIndex = 0;
             // 
             // lblChangePassword
             // 
@@ -56,6 +56,7 @@
             this.lblChangePassword.TabIndex = 1;
             this.lblChangePassword.TabStop = true;
             this.lblChangePassword.Text = "Şifre Değiştir";
+            this.lblChangePassword.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblChangePassword_LinkClicked);
             // 
             // label1
             // 
@@ -101,6 +102,7 @@
             this.btnSave.TabIndex = 17;
             this.btnSave.Text = "Kaydet";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -111,6 +113,7 @@
             this.btnDelete.TabIndex = 18;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // frmMain
             // 
@@ -124,9 +127,10 @@
             this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblChangePassword);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lstNotes);
             this.Name = "frmMain";
             this.Text = "frmMain";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmMain_FormClosed);
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -135,7 +139,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lstNotes;
         private System.Windows.Forms.LinkLabel lblChangePassword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTitle;
