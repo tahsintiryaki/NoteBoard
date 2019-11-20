@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NoteBoard.DAL.Repositories
 {
-    class PasswordDAL
+   public class PasswordDAL
     {
         NoteBoardDbContext _db;
         public PasswordDAL()

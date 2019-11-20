@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NoteBoard.DAL.Repositories
 {
-    class UserDAL
+   public class UserDAL
     {
         NoteBoardDbContext _db;
 
@@ -22,7 +22,7 @@ namespace NoteBoard.DAL.Repositories
             _db.Entry(user).State = EntityState.Added;// Durum kontrolu yapar veri yoksa ekler varsa bir şey yapmaz. Alttakine göre daha detyalı bir kod.
 
             //_db.Users.Add(user);
-            return _db.SaveChanges();
+            return _db.SaveChanges();//içerisinde executeNonquery çalıştırdıpı için int deper döndürüyor.
         }
 
         public int Update(User user)

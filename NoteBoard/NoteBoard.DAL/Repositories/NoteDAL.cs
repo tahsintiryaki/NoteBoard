@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NoteBoard.DAL.Repositories
 {
-    class NoteDAL
+   public class NoteDAL
     {
         NoteBoardDbContext _db;
         public NoteDAL()
