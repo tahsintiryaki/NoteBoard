@@ -14,8 +14,8 @@ namespace NoteBoard.DAL
         {
             User user = new User()
             {
-                FirstName = "Tuğba",
-                LastName = "Çevik",
+                FirstName = "Egitim",
+                LastName = "Sart",
                 UserName = "admin",
                 UserRole = UserRole.Admin,
                 IsActive = true,
@@ -23,7 +23,7 @@ namespace NoteBoard.DAL
             };
             user.Passwords.Add(new Password()
             {
-                PasswordText = "Ba123",
+                PasswordText = "Esk123",
                 IsActive = true,
                 CreatedDate = DateTime.Now
             });
